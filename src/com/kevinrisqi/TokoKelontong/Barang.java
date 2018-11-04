@@ -13,6 +13,7 @@ public class Barang {
     String namaBarang;
     int qty;
     int harga;
+    int total;
 
     public Barang(String namaBarang, int qty, int harga) {
         this.namaBarang = namaBarang;
@@ -21,12 +22,11 @@ public class Barang {
     }
     
     public int hitungHargaTotal(){
-        return qty*harga;
+        return total = qty*harga;
     }
     
     public void tampil(){
-        System.out.println("Nama Barang\t\t"+"Qty\t\t"+"Harga\t\t"+"Total Harga\t\t");
-        System.out.println(namaBarang+"\t\t"+qty+"\t\t"+harga+"\t\t"+hitungHargaTotal());
+        System.out.println(namaBarang+"\t\t\t"+qty+"\t\t"+harga+"\t\t"+hitungHargaTotal());
     }
     
     

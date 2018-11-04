@@ -14,10 +14,10 @@ public class KeranjangBelanja {
     int jmlBarang;
 
     KeranjangBelanja(int jmlBarang) {
-        this.jmlBarang = jmlBarang+1;
+        this.jmlBarang = jmlBarang;
     }
     
-    Barang listBrg[] = new Barang[jmlBarang];
+    Barang listBrg[] = new Barang[10];
     
     void tambah(Barang b){
         if(index < listBrg.length){
@@ -30,6 +30,7 @@ public class KeranjangBelanja {
     }
     
     void tampil(){
+        System.out.println("Nama Barang\t\t"+"Qty\t\t"+"Harga\t\t"+"Total Harga\t\t");
         for (Barang b : listBrg) {
             b.tampil();
             //System.out.println("===============================");
