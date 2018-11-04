@@ -14,4 +14,13 @@ public class Barang {
     int stok;
     int harga;
     int jumlahBarang;
+
+    public Barang(String namaBarang, int stok, int harga, int jumlahBarang) {
+        this.namaBarang = namaBarang;
+        this.stok = stok;
+        this.harga = harga;
+        this.jumlahBarang = jumlahBarang;
+    }
+    
+    
 }
