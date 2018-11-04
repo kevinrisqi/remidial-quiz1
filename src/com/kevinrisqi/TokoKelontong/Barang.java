@@ -11,15 +11,24 @@ package com.kevinrisqi.TokoKelontong;
  */
 public class Barang {
     String namaBarang;
-    int stok;
+    int qty;
     int harga;
     int jumlahBarang;
 
-    public Barang(String namaBarang, int stok, int harga, int jumlahBarang) {
+    public Barang(String namaBarang, int qty, int harga, int jumlahBarang) {
         this.namaBarang = namaBarang;
-        this.stok = stok;
+        this.qty = qty;
         this.harga = harga;
         this.jumlahBarang = jumlahBarang;
+    }
+    
+    public int hitungHargaTotal(){
+        return qty*harga;
+    }
+    
+    public void tampil(){
+        System.out.println("Nama Barang\t\t"+"Qty\t\t"+"Harga\t\t"+"Total Harga\t\t");
+        System.out.println(namaBarang+"\t\t"+qty+"\t\t"+harga+"\t\t"+hitungHargaTotal());
     }
     
     
