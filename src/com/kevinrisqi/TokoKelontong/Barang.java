@@ -10,10 +10,10 @@ package com.kevinrisqi.TokoKelontong;
  * @author Anonymous
  */
 public class Barang {
-    String namaBarang;
-    int qty;
-    int harga;
-    int total;
+    private String namaBarang;
+    private int qty;
+    private int harga;
+    private int total;
     //int totalBelanja;
 
     public Barang(String namaBarang, int qty, int harga) {

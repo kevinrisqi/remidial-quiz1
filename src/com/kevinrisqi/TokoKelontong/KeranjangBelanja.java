@@ -11,8 +11,7 @@ package com.kevinrisqi.TokoKelontong;
  */
 public class KeranjangBelanja {
     private int jmlBarang;
-    
-    int index;
+    private int index;
 
 
     KeranjangBelanja(int jmlBarang) {
