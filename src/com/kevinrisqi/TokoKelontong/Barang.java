@@ -13,13 +13,11 @@ public class Barang {
     String namaBarang;
     int qty;
     int harga;
-    int jumlahBarang;
 
-    public Barang(String namaBarang, int qty, int harga, int jumlahBarang) {
+    public Barang(String namaBarang, int qty, int harga) {
         this.namaBarang = namaBarang;
         this.qty = qty;
         this.harga = harga;
-        this.jumlahBarang = jumlahBarang;
     }
     
     public int hitungHargaTotal(){

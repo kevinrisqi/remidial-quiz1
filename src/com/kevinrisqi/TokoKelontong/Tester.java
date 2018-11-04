@@ -28,7 +28,7 @@ public class Tester {
             System.out.print("Masukkan Harga Barang (Rp) : ");
             int harga = i.nextInt();
             System.out.println("------------------------------------");
-            Barang b = new Barang(nama,qty,harga,jmlBarang);
+            Barang b = new Barang(nama,qty,harga);
             kb.tambah(b);
         }
         kb.tampil();
