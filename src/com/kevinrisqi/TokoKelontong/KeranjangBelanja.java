@@ -27,4 +27,10 @@ public class KeranjangBelanja {
             System.out.println("Data sudah penuh");
         }
     }
+    
+    void tampil(){
+        for (Barang b : listBrg) {
+            b.tampil();
+            //System.out.println("===============================");
+        }
 }
