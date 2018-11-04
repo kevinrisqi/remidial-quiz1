@@ -35,7 +35,10 @@ public class KeranjangBelanja {
         System.out.println("--------------------------------------------------------------------------------");
         for (Barang b : listBrg) {
             b.tampil();
+            //b.totalBelanja();
         }
+        //Barang c = new Barang();
+        //c.totalBelanja();
         System.out.println("--------------------------------------------------------------------------------");
     }
 }
