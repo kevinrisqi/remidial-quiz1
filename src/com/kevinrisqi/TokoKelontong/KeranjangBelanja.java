@@ -14,7 +14,7 @@ public class KeranjangBelanja {
     int jmlBarang;
 
     KeranjangBelanja(int jmlBarang) {
-        this.jmlBarang = jmlBarang;
+        this.jmlBarang = jmlBarang+1;
     }
     
     Barang listBrg[] = new Barang[jmlBarang];
