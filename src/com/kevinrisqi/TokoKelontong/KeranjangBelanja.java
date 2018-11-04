@@ -19,9 +19,6 @@ public class KeranjangBelanja {
         this.listBrg = new Barang[jmlBarang];
     }
 
-    public void setListBrg(Barang[] listBrg) {
-        this.listBrg = listBrg;
-    }
     Barang listBrg[];
     void tambah(Barang b){
         if(index < listBrg.length){
