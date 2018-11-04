@@ -26,7 +26,7 @@ public class Barang {
     }
     
     public void tampil(){
-        System.out.println(namaBarang+"\t\t\t"+qty+"\t\t"+harga+"\t\t"+hitungHargaTotal());
+        System.out.println("|"+namaBarang+"\t\t\t|"+qty+"\t\t|"+harga+"\t\t|"+hitungHargaTotal()+"\t\t\t|");
     }
     
     
