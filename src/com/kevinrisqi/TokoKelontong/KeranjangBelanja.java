@@ -10,14 +10,8 @@ package com.kevinrisqi.TokoKelontong;
  * @author Anonymous
  */
 public class KeranjangBelanja {
+    Barang listBrg[] = new Barang[2];
     int index;
-    int jmlBarang;
-
-    KeranjangBelanja(int jmlBarang) {
-        this.jmlBarang = jmlBarang;
-    }
-    
-    Barang listBrg[] = new Barang[10];
     
     void tambah(Barang b){
         if(index < listBrg.length){
@@ -25,15 +19,13 @@ public class KeranjangBelanja {
             index++;
         }
         else{
-            System.out.println("Data sudah penuh");
+            System.out.print("Data sudah penuh");
         }
     }
-    
     void tampil(){
         System.out.println("Nama Barang\t\t"+"Qty\t\t"+"Harga\t\t"+"Total Harga\t\t");
         for (Barang b : listBrg) {
             b.tampil();
-            //System.out.println("===============================");
         }
     }
 }

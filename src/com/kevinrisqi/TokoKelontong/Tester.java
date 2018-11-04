@@ -18,7 +18,7 @@ public class Tester {
         int jmlBarang = i.nextInt();
         System.out.println("=======================================");
         
-        KeranjangBelanja kb = new KeranjangBelanja(jmlBarang);
+        KeranjangBelanja kb = new KeranjangBelanja();
         
         for (int j = 0; j < jmlBarang; j++) {
             System.out.print("Masukkan Nama Barang : ");
