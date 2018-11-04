@@ -14,10 +14,11 @@ public class Tester {
         Scanner t = new Scanner(System.in);
         Scanner i = new Scanner(System.in);
         
-        KeranjangBelanja kb = new KeranjangBelanja();
-        
-        System.out.print("Masukkan Jumlah Barang yang Akan di tambahkan");
+        System.out.print("Masukkan Jumlah Barang : ");
         int jmlBarang = i.nextInt();
+        System.out.println("=======================================");
+        
+        KeranjangBelanja kb = new KeranjangBelanja(jmlBarang);
         
         for (int j = 0; j < jmlBarang; j++) {
             System.out.print("Masukkan Nama Barang : ");
@@ -30,5 +31,6 @@ public class Tester {
             Barang b = new Barang(nama,qty,harga,jmlBarang);
             kb.tambah(b);
         }
+        kb.tampil();
     }
 }

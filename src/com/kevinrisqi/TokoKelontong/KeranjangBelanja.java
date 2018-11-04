@@ -10,13 +10,14 @@ package com.kevinrisqi.TokoKelontong;
  * @author Anonymous
  */
 public class KeranjangBelanja {
-    Barang listBrg[];
     int index;
-    
-    public KeranjangBelanja(){
-        int jmlBarang = 1;
-        this.listBrg = new Barang[jmlBarang];
+    int jmlBarang;
+
+    KeranjangBelanja(int jmlBarang) {
+        this.jmlBarang = jmlBarang;
     }
+    
+    Barang listBrg[] = new Barang[jmlBarang];
     
     void tambah(Barang b){
         if(index < listBrg.length){
