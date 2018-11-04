@@ -13,5 +13,18 @@ public class KeranjangBelanja {
     Barang listBrg[];
     int index;
     
+    public KeranjangBelanja(){
+        int jmlBarang = 1;
+        this.listBrg = new Barang[jmlBarang];
+    }
     
+    void tambah(Barang b){
+        if(index < listBrg.length){
+            listBrg[index] = b;
+            index++;
+        }
+        else{
+            System.out.println("Data sudah penuh");
+        }
+    }
 }
